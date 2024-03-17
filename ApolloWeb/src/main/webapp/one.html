@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>patient datails</title>
+	</head>
+	<body>
+		<inputform action="/ApolloWeb/patient"  method="post">
+			<input type="number" name="id"  placeholder="enter id"/><br/><br/>
+			<input type="text" name="name" placeholder="enter name"/><br/><br/>
+			<input name="gender"  type="radio" value="male"/>Male
+            <input name="gender"  type="radio" value="female"/>Female <br/><br/>
+            <select name="disease">
+                        <option value="select disease">Select Disease</option>
+                        <option value="headache">Headache</option>
+                        <option value="Cancer">Cancer</option>
+                        <option value="motions">Motions</option>	
+                        <option value="fever">Fever</option>	
+                        </select> <br/><br/>
+                        <textarea name="history"   cols="30" rows="10" placeholder="Enter history"></textarea><br/><br/>
+							
+				<input type="submit" value="add"/>
+				<input type="reset" value="clear"/>	
+		</form> 
+	</body>
+</html>
